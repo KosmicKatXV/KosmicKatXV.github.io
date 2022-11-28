@@ -1,0 +1,93 @@
+<!--
+.link_blue_light { color: #8080FF; text-decoration: underline; }
+ .link_blue_light:hover { color: #404040; text-decoration: underline; }
+ 
+ .link_grey_dark { color: #404040; text-decoration: underline; }
+ .link_grey_dark:hover { color: #000000; text-decoration: underline; }
+ 
+ .link_grey_light { color: #848484; text-decoration: underline; }
+ .link_grey_light:hover { color: #404040; text-decoration: underline; }
+ 
+ .link_white { color: #FFFFFF; text-decoration: none; }
+ .link_white:hover { color: #404040; text-decoration: underline; }
+ .header {
+    background-image: url('../img/header.png');
+    object-fit: contain;
+    background-size: 100% 100%;
+    font-family: verdana, ms sans serif, sans serif,arial;
+    color:#FFFFFF;
+    font-size: 11;
+ }
+ .content{
+    background-image: url('../img/bg_gray.gif');
+    padding: 0.5em .5em 0.5em;
+    font-family: verdana, ms sans serif, sans serif,arial;
+    color:#FFFFFF;
+    font-size: 10;
+ }
+ .footer{
+   background-image: url('../img/bg_under.png');
+   background-size: 100% 100%;
+ }
+
+ body{
+   transform: scale(var(--vw-scale));
+ }
+ p { text-align: justify; line-height: 175% }
+-->
+canvas{
+position:absolute;
+left:0;
+top:0;
+z-index:-1;
+}
+
+img{
+  image-rendering: crisp-edges;
+}
+
+#nav-wrapper {
+  width:144;
+  margin:0 auto;
+  }
+  
+  ul#nav {
+  font-family: Verdana;
+  font-size:14px;
+  list-style:none;
+  margin:0 auto;
+  padding:0;
+  width:144;
+  overflow:auto
+  }
+  
+  ul#nav li {
+  display:inline;
+  }
+  
+  ul#nav li a {
+  font-family: verdana, ms sans serif, sans serif,arial;
+  width:65%;
+  text-decoration:none;
+  display: block;
+  padding:5px 21px;
+  background:#33860e;
+  color:#eee;
+  float:left;
+  text-align:center;
+  border-top:2px solid #00FF41;
+  border-right:2px solid #3d1000;
+  border-bottom:2px solid #3d1000;
+  border-left:2px solid #00FF41;
+  }
+  
+  ul#nav li a:hover {
+  font-family: verdana, ms sans serif, sans serif,arial;
+  background:#33860e;
+  color:#000;
+  border-top:2px solid #815444;
+  border-right:2px solid #c59888;
+  border-bottom:2px solid #c59888;
+  border-left:2px solid #815444;
+  }
+  

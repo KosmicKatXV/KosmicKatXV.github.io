@@ -1,0 +1,515 @@
+<!--//
+
+
+Design by Jonathan Sutherland
+x3x93@unb.ca
+2000 - 2001
+
+
+NOTE:
+
+If you use, mod or hack this design, please give credit where credit
+is due. Please include my name and email at the top of your code.
+
+
+ABOUT dm:
+
+dm [Digital Multiplex] was a small project I was working on in my
+spare time during the summer of 2000. I stopped work on it as I
+became more interested in going to the beach. I am now releasing
+the design into the hands of the OSWD. Any comments or questions
+can be directed to Jonathan at x3x93@unb.ca.
+
+To see what the site looks like with some graphics, please follow
+the link below. The add banner at the top really screwed up my design.
+However, I had managed to work around it before. Now, it just doesn't
+look that good.
+
+http://digitalmultiplex.hypermart.net
+
+
+NOTES:
+
+This site was designed with HomeSite using a tab setting
+of 4 spaces. The HTML structure used has been proven by
+and to myself as a very efficient method of organizing
+the code.
+
+Main page elements have three empty lines between them.
+Tables within tables have two empty lines between them.
+Tables and content elements have to emtpy lines between them.
+
+
+TIPS:
+
+* Drink water. Lots of water.
+* Use a transparent pixel for architectural design.
+* I am a fourth year Electrical Engineering student at UNB, and I am
+  also pursuing a diploma in Technology Management and Entrepreneurship
+  at the same time.
+
+Now, send all your love/hate mail to x3x93@hotmail.com :)
+
+//-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>:: Da cooleest page in da worldz ::</title>
+	<link id="page_favicon" href="data:image/x-icon;base64,R0lGODlhEAAQAPECAAwNCzTZKwAAAAAAACH5BAlkAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC5wQCAAEAEAAAAYAAAAgABBAAAAAAAAAAQAAAARAAAAAAQAAAQAAAARAAAAAAACAAAAACAEAAEAAAAAEAIAAAAAAAQAAAAAAAAQAgAAAAAABAABAAAAABACAAAAAAAEAAEAAAABAAAAAAAAAQAAAQABAAAAAQAAAAAAAAEAAAEAAQAAAAEAAAEAAAABAAAAAAEAAAABAAABAAAAAQAAAQABAAAAAAAAAQAAAAEAAAEAAQAAAAEAAAEAAAABAAABAAAAAAABAAABAAAAAQAAAQAAAAAAAQAAAQAAAAEAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEAEAAAAQAAAAgABBAAABAAAAAAQAAAARAAABAAAAAAQAAAARAAAAAAACAAAAACAEAAEAAAAAAAIAAAAAIAQAAQAAAAAQAgAAAAAgBAABAAAAABACAAAAACAEAAAAAAABAAABAAAAAAAAAQAAAAAAAQAAAQAAAAAAAAEAAQAAAAEAAAEAAAABAAABAAEAAAABAAABAAAAAQAAAQABAAAAAAAAAQAAAAEAAAEAAQAAAAEAAAEAAAABAAAAAAEAAAABAAABAAAAAQAAAAABAAAAAQAAAAAAAAEAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQEAAAAYAAAAAABBAAABAAQAAAQAAAARAAABAAQAAAQAAAARAAAAABACAAAAACAEAAEAAAAAEAIAAAAAIAAAAQAAAAAQAgAAAAAgAAABAAAAABACAAAAACAAAAEAAAABAAAAAAAAAQAAAAABAAAAAAAAAAAAAAEAAAEAAQAAAAAAAAAAAAABAAABAAEAAAABAAABAAAAAQAAAQAAAAAAAQAAAQAAAAEAAAEAAQAAAAEAAAEAAAABAAABAAEAAAABAAABAAAAAAAAAQABAAAAAQAAAQAAAAAAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQEAAAAQAAAAgABBAAABAAQAAAQAAAARAAAAAAQAAAQAAAARAAAAAAACAAAAACAAAAEAAAAAEAIAAAAAIAAAAQAAAAAQAgAAAAAgBAABAAAAABACAAAAACAEAAEAAAABAAABAAAAAQAAAQABAAAAAQAAAQAAAAEAAAEAAQAAAAEAAAEAAAABAAABAAEAAAABAAABAAAAAAAAAQABAAAAAQAAAQAAAAEAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAQAAAAEAAAEAAQAAAAAAAKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQEAAAAYAAAAgABBAAABAAQAAAAAAAARAAABAAQAAAAAAAARAAAAABACAAAAAAAEAAEAAAAAEAIAAAAAAAAAAQAAAAAQAgAAAAAgAAABAAAAABACAAAAACAAAAAAAAABAAABAAAAAQAAAQAAAAAAAQAAAQAAAAEAAAEAAAAAAAEAAAEAAAABAAABAAAAAAABAAAAAAAAAQAAAQABAAAAAQAAAQAAAAEAAAEAAQAAAAAAAAEAAAABAAABAAEAAAAAAAABAAAAAQAAAQABAAAAAQAAAQAAAAEAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQEAAAAIAAAAgABBAAAAAAQAAAQAAAARAAABAAQAAAAAAAABAAAAABACAAAAAAAEAAEAAAAAEAIAAAAAIAQAAAAAAAAQAgAAAAAgBAAAAAAAABACAAAAACAEAAEAAAABAAABAAAAAQAAAQABAAAAAQAAAQAAAAEAAAEAAQAAAAEAAAEAAAABAAABAAEAAAABAAAAAAAAAQAAAQABAAAAAQAAAAAAAAEAAAEAAQAAAAAAAAAAAAABAAABAAEAAAABAAABAAAAAQAAAQABAAAAAQAAAQAAAAAAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQEAAAAYAAAAgABBAAABAAQAAAQAAAARAAAAAAQAAAQAAAABAAAAAAACAAAAACAAAAEAAAAAAAIAAAAAIAQAAQAAAAAQAgAAAAAgBAABAAAAABACAAAAACAEAAEAAAABAAABAAAAAQAAAQAAAAAAAQAAAQAAAAEAAAEAAQAAAAEAAAEAAAAAAAABAAEAAAABAAAAAAAAAAAAAQABAAAAAQAAAQAAAAAAAAEAAQAAAAEAAAEAAAABAAABAAEAAAABAAABAAAAAQAAAQABAAAAAQAAAQAAAAEAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQEAAAAQAAAAgABBAAABAAAAAAQAAAAQAAABAAQAAAQAAAARAAAAAAACAAAAACAAAAEAAAAAEAIAAAAAIAAAAQAAAAAQAgAAAAAgAAABAAAAABACAAAAACAEAAEAAAABAAABAAAAAQAAAQAAAAAAAQAAAQAAAAEAAAEAAQAAAAEAAAEAAAABAAABAAEAAAABAAABAAAAAQAAAQABAAAAAQAAAQAAAAEAAAEAAQAAAAEAAAEAAAABAAABAAEAAAAAAAABAAAAAQAAAQABAAAAAQAAAQAAAAAAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAAQEAAAAYAAAAAABBAAABAAQAAAQAAAARAAABAAQAAAQAAAARAAAAAAACAAAAACAEAAEAAAAAAAIAAAAAIAQAAQAAAAAAAgAAAAAgBAABAAAAAAACAAAAACAEAAEAAAABAAAAAAAAAQAAAQAAAAAAAQAAAAAAAAEAAAEAAQAAAAEAAAEAAAABAAABAAEAAAABAAABAAAAAQAAAQABAAAAAQAAAQAAAAEAAAEAAQAAAAEAAAEAAAABAAAAAAEAAAABAAABAAAAAQAAAAABAAAAAQAAAQAAAAEAAAAAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQAAAAAYAAAAgABAAAABAAQAAAQAAAAQAAABAAQAAAQAAAAQAAAAABACAAAAACAAAAEAAAAAEAIAAAAAIAAAAQAAAAAQAgAAAAAgBAABAAAAABACAAAAACAEAAEAAAABAAABAAAAAQAAAQABAAAAAQAAAQAAAAAAAAEAAQAAAAEAAAEAAAAAAAABAAEAAAABAAABAAAAAAAAAQABAAAAAQAAAQAAAAAAAAEAAQAAAAAAAAEAAAABAAABAAEAAAAAAAAAAAAAAQAAAQABAAAAAQAAAAAAAAEAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQEAAAAYAAAAgABAAAABAAQAAAAAAAAQAAAAAAQAAAAAAAAAAAAAAAAAAAAAQCgUAgAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAABAAABAAABAAAAAAAAAAAAAQAAAQAAAQAAAAAAAAAAAAEAAAEAAAEAAAAAAAAAAAABAAABAAABAQEBAQEAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAEAAAABAAABAAAAAAAAAQABAAAAAQAAAQAAAAEAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQAAAAAYAAAAAABAAAABAAQAAAAAAAAQAAABAAQAAAAAAAAAAAAAABACAAAAACgUAgAAAAAAEAIAAAAACAAAAAAAAAAQAgAAAAAIAAAAAAAAABACAAAAAAgAAAAAAAAAAAABAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAEAAAAAAAABAAABAAAAAAABAAAAAAAAAQAAAQAAAAAAAAAAAQAAAAEAAAEAAAABAAAAAAEAAAABAAABAAAAAQAAAQABAAAAAQAAAQAAAAEAAAEAAQAAAAAAEKAAAh+QQJZAACACwAAAAAEAAQAAAC5wQCAAEQEAAAAIAAAAgAABAAABAAQAAAAAAAAAAAABAAQAAAAAAAAAAAAAABAAAAAAACgUAgAAAAAAEAAAAAAAKAACAAAAAAAQAgAAAAAoAAIAAAAAABACAAAAACgAAgAAAAABAAABAAAAAQABAAEAAAAAAQAAAQAAAAEAAAABAAAAAAEAAAEAAAABAAAAAQAAAAABAAABAAAAAQAAAAEAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAAAAQAAAAEAAAEAAQAAAAAAEKAAA7" rel="icon" type="image/x-icon">
+	<link href="github-widget/github-widget.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/css/default.css">
+	<noscript><style>
+		body {
+  			background-image: url('img/bg.gif');
+		}
+	</style></noscript>
+
+</head>
+
+<body bgcolor="#000000" text="#000000" link="#404040" vlink="#404040" alink="#404040">
+<div align="center" class="okzoomer" style="transform-origin: top center 0px;">
+
+<br><br>
+
+
+
+<!--//
+
+NOTES:
+
+For browser discrepencies with the empty <td>'s listed below, it is
+very easy to create a transparent 1 x 1 gif image to insert and add
+dimension to each <td>.
+
+I have not used a transparent pixel as images are required by the
+OSWD to be omitted.
+
+//-->
+
+
+
+<!--//
+
+TITLE TABLE 
+
+It's easy to make your title table look great. Put in some text using a simple, well
+defined font in a color that matches the colors of your site. Check out the sites
+below for some simple examples that turn out great. If your good at graphics, all the
+better.
+
+http://digitalmultiplex.hypermart.net
+
+TIP: If you don't already, try designing your site in Photoshop or Paint Shop, then
+go from there.
+
+//-->
+<table width="606" cellspacing="0" cellpadding="0" border="0">
+<tr>
+	<td width="132"><!--// emtpy //--></td>
+	<td width="474" bgcolor="#000000" colspan="5"></td>
+</tr>
+<tr>
+	<td width="130" align="center" valign="bottom">
+	
+
+		<table cellspacing="0" cellpadding="3" border="0">
+		<tr>
+			<td>
+			
+			
+				<!--// BULLET TYPE A //-->
+				<!--//
+				
+				I felt that I just had to include some kind of bullet other than a
+				special character. Thus, I made this very simple one with HTML.
+				I had included several others for the FEATURE NEWS section, however,
+				they extra code just added clutter.
+				
+				//-->
+
+				<!--// END BULLET TYPE A //-->
+				
+			
+			</td>
+		    <td>			
+				<img src="img/hl.gif" alt="Half Life Spinning Logo" width="50" height="50">	
+			</td>
+		</tr>
+		</table>
+
+		
+	</td>
+	<td width="462" height="40" align="center">
+		<font face="arial black, arial" color="#00FF41" size="5">
+		<b><tt id="kosmickat">k 0 5 m 1 c k 4 t z</tt></b>
+		</font>	
+	</td>
+</tr>
+</table>
+<!-- END TITLE TABLE -->
+
+
+
+<!--// SUBTITLE TABLE //-->
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td bgcolor="#00FF41">
+	
+
+		<!--//
+		
+		NOTE:
+		
+		This <table> inside a <table> creates a black border by using cellspacing="1" (as
+		seen below) on the inside table. The color of the border is determined by the color
+		of the <td> for the outside <table> (as seen above).
+		
+		//-->
+	
+
+		<table border="0" cellspacing="1" cellpadding="0">
+
+			<tbody><tr>
+				<td colspan="2" width="604" height="15" bgcolor="#0D0208" align="center">
+					<marquee behavior="scroll" direction="left" scrollamount="5">
+						<font size="1" face="verdana, ms sans serif, sans serif" color="white">
+							<span id="song_name">Not workinzzz</span>
+						</font>
+					</marquee>
+				</td>
+			</tr>
+			<tr>
+				<td width="94" height="15" bgcolor="#808080" align="center">
+					<font size="1" face="verdana, ms sans serif, sans serif" color="#FFFFFF">
+					<b>main menu</b>
+					</font>
+				</td>
+				<td width="340" bgcolor="666666" align="center">
+					<font size="1" face="verdana, ms sans serif, sans serif" color="#000000">
+					<b>dONT fORGET 2 aLLOW mUZIK IN YO BROWSERZ </b>				</font>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+
+
+	</td>
+</tr>
+</table>
+<!-- END SUBTITLE TABLE -->
+
+
+
+<!-- MAIN BODY -->
+<table width="606" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td width="1" bgcolor="#00FF41">
+		<!--// empty //-->
+		<!--//
+		
+		This empty <td> creates the left hand side, black border. It may be
+		necessary to insert an <img src="pixel_transparent" width="1" height="1" border="0" alt="">
+		for the <td> to view properly in Netscape or earlier browser versions.
+		
+		Empty <td> borders can also be seen in the code below. It may necessary to include a
+		transparent pixel in all of them. I don't have Netscape, so I cannot judge this.
+		
+		//-->
+	</td>
+    <td width="130" bgcolor="#444444" align="center" valign="top">
+	
+	
+		<!--// MENU TABLE //-->
+		<table cellspacing="0" cellpadding="0" border="0">
+			<div id="nav-wrapper">
+				<ul id="nav">
+					<li><a href="">Da H0uzZ</a></li>
+					<li><a href="">3xPl01tzZ</a></li>
+					<li><a href="">W0rk1n it</a></li>
+					<li><a href="">W0rk1n it</a></li>
+					<li><a href="/contact/contact.html">T4lk 2 m</a></li>
+				</ul>
+				</div>
+		</table>
+		<table width="100%" height="4" cellspacing="0" cellpadding="5" border="0" class="footer" >
+			<tr>
+				<td align="left">
+
+				</td>
+			</tr>
+			</table>
+		<!--// END MENU TABLE //-->
+
+
+		<br>
+				
+		
+		<!--// SIDELINES TEXT //-->
+		<table width="120" cellspacing="0" cellpadding="5" border="0" class="header" >
+			<tr>
+				<td align="left">
+					<font size="2">
+					
+						<i>j0k3z</i>
+					
+					</font>
+				</td>
+			</tr>
+			</table>
+				<table cellspacing="1" cellpadding="3" border="0">
+				<tr>
+				    <td width="114" bgcolor="#E2E2E2">
+													
+						
+						
+						<div align="justify">
+													
+							<iframe  width="114" height="150" scrolling="yes" src="https://pagina-del-dia.euroresidentes.es/chiste-del-dia/gadget-chiste-del-dia.php?tabla=F0F0F0&fondo=333333&texto=FFFFFF&links=00FF41&titulo=FFFFFF" frameborder="0"></iframe>
+						
+						</div>
+										
+						</font>
+					</td>
+				</tr>
+				</table>
+				<table width="120" height="4" cellspacing="0" cellpadding="5" border="0" class="footer" >
+					<tr>
+						<td align="left">
+		
+						</td>
+					</tr>
+					</table>
+		<!--// END SIDELINES TEXT //-->
+		
+		
+		<br>
+		
+		
+		
+		<br>
+		
+		
+		<!--// GRAPHIC LINK //-->
+		<!--//
+		
+		Replace this graphic link code with your choice of graphics link.
+		As you probably know, the standard is 88 x 31.
+		
+		If you add more images below, the spacing between the images can be
+		set using vspace in each <img> tag, allowing for nice formatting.
+		
+		//-->
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td bgcolor="#404040">
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="9W7VSJXWD4WKA" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+					<img alt="" border="0" src="https://www.paypal.com/en_ES/i/scr/pixel.gif" width="1" height="1" />
+					</form>
+			</td>
+		</tr>
+		</table>
+		<br>
+		<br>
+		<!--// END GRAPHIC LINK //-->
+		
+	
+	</td>
+	<td width="1" bgcolor="#00FF41"><!--// empty //--></td>
+	<td width="470" bgcolor="#333333" valign="top">
+	      
+
+		<!--// CONTENT TABLE //-->
+		<table cellspacing="0" cellpadding="0" border="0" align="center">
+		<tr>
+			<td width="440">
+			
+			
+				<font size="1" face="verdana, ms sans serif, sans serif">
+				<div align="justify">				
+				
+				<br>
+				
+
+				<!--// HEADLINE NEWS HEADER //-->
+				<table width="100%" cellspacing="0" cellpadding="5" border="0" class="header">
+				<tr>
+					<td width="16"></td>
+					<td align="left">
+						<font size="2">
+							<i>wHO aM i ¡¡</i>
+						</font>
+					</td>
+				</tr>
+				</table>
+				<!--// END HEADLINE NEWS HEADER //-->
+				
+				
+				
+				<!--// HEADLINE NEWS BODY //-->
+				<table width="100%" bgcolor="#808080" cellspacing="0"
+				" border="0" class="content">
+				<tr>
+					<td>
+					
+					
+						<!--// SIDELINES TEXT //-->
+						<table cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td>
+							
+							
+								<table width="130" height="130" cellspacing="1"  border="0">
+								<tr>
+								    <td align="center">
+										<img src="img/pf.jpg"></img>
+									</td>
+								</tr>
+								</table>
+								
+						
+							</td>
+						</tr>
+						</table>
+						<!--// END SIDELINES TEXT //-->
+						
+					
+					</td>
+					<td class="content">
+						<font face="verdana, ms sans serif, sans serif" color="" size="1">
+					
+						<p>		
+						I am a Andalusian computer engineering student
+						with a deep interest in retro technology. I have experience on C++,C,
+						Java, Haskell and ARM assembly and I am looking forward to fully
+						control Javascript, Python and Docker. In the meantime I am setting
+						up this website both as a project to learn about web development as well
+						as a way to show off all my previous projects.
+						</p>
+														
+						</font>
+					</td>
+				</tr>
+				</table>
+				<table width="440" class="footer" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td>
+						
+					
+							<table cellspacing="1" cellpadding="0" border="0">
+							<tr>
+								<td width="130" height="15"  align="right">
+								</td>
+							</tr>
+							</table>
+					
+					
+						</td>
+					</tr>
+					</table>
+				<!--// END HEADLINE NEWS BODY //-->
+
+
+				<br><br>
+
+				
+				<!--//
+				
+				BULLETS:
+				
+				The special chars below were used as no pictures are allowed. Thus,
+				when you make your site, you should probably make some bullets. I
+				have a few at the original version of this site:
+				
+				http://digitalmultiplex.hypermart.net
+				
+				(Yes, you may use them.)
+				
+				//-->
+				
+				
+				<!--// FEATURED NEWS LEGEND //-->
+				<table width="440" class="header">
+				<tr>
+					<td width="16"></td>
+					<td>
+						<font face="verdana, ms sans serif, sans serif" size="2">
+							<i>  dA bEST pROJECTzz</i>
+						</font>
+					</td>
+				</tr>
+				</table>
+				<!--// END FEATURED NEWS LEGEND //-->
+				
+
+				<br>
+				<div class="github-widget" data-user="YoSoyGodot" data-options='{"sortBy":"stargazers_count", "limit":4,"forks":true}'></div>
+				
+				</div>
+				</font>
+
+
+			</td>
+		</tr>
+		</table>
+		<!--// END CONTENT TABLE //-->
+
+		
+	</td>
+	<td width="1" bgcolor="#00FF41"><!--// empty //--></td>
+</tr>
+</table>
+<!--// END MAIN BODY //-->
+
+
+
+<!--// FOOTER TABLE //-->
+<table width="606" class="footer" cellspacing="0" cellpadding="0" border="0">
+<tr>
+	<td>
+	
+
+		<table cellspacing="1" cellpadding="0" border="0">
+		<tr>
+			<td width="606" height="15"  align="right">
+			</td>
+		</tr>
+		</table>
+
+
+	</td>
+</tr>
+</table>
+<!--// END FOOTER TABLE //-->
+
+
+
+<br>
+
+
+
+<!--// SUBFOOTER //-->
+<font face="verdana, ms sans serif, sans serif" color="#FFFFFF" size="1">
+  <div align="center"> Courtesy  <a href="http://www.openwebdesign.org" target="_blank">Open Web Design</a><a href="http://www.dubaiapartments.biz" target="_blank"></a>Thanks 
+    to <a href="http://www.florida-villa.com" target="_blank">Florida Vacation Homes</a> <br>
+    design by <a href="mailto:x3x93@unb.ca" class="link_grey_light">jonathan 
+		sutherland</a>
+<!--This theme is free for distriubtion,  so long as  link to openwebdesing.org and florida-villa.com  stay on the theme-->
+ </div>
+</font>
+<!--// END SUBFOOTER //-->
+
+
+
+</div>
+<canvas id="c"></canvas>
+<script src="github-widget/github-widget.min.js"></script>
+</body>
+<embed id="sound" loop='true' type='audio/mpeg' controller='false' height='0' width='0'>
+<script src="js/audio.js"></script>	
+<script  src="js/kosmickat.js"></script>
+<script  src="js/bg.js"></script>
+</html>
