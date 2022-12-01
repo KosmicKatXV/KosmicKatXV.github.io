@@ -5,7 +5,7 @@ var body = document.body,
     html = document.documentElement;
 
 //making the canvas full screen
-c.width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
+c.width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth )*1.1;
 page = document.querySelector('.okzoomer').style.transform = "scale(" + c.width/800 + ")";
 c.height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight,c.width*0.83);
 
@@ -50,31 +50,34 @@ function draw()
         drops[i]++;
     }
 }
-function redo(){
-    var c = document.getElementById("c");
-    var ctx = c.getContext("2d");
-    var body = document.body,
-        html = document.documentElement;
+function redo()
+{
+    console.log("im being resizeeeed");
+
+    c = document.getElementById("c");
+    ctx = c.getContext("2d");
+    body = document.body,
+    html = document.documentElement;
 
     //making the canvas full screen
-    c.height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-    c.width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth )*(c.width/800);
+    c.width = window.innerWidth;
+    page = document.querySelector('.okzoomer').style.transform = "scale(" + c.width/800 + ")";
+    c.height = Math.max( window.innerHeight,c.width*0.83);
     ctx.clearRect(0, 0, c.width, c.height);
     //chinese characters - taken from the unicode charset
-    var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+    matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
     //converting the string into an array of single characters
     matrix = matrix.split("");
 
-    var font_size = 10;
-    var columns = c.width/font_size; //number of columns for the rain
+    columns = c.width/font_size;
+    columns = c.width/font_size; //number of columns for the rain
     //an array of drops - one per column
-    var drops = [];
+    drops = [];
     //x below is the x coordinate
     //1 = y co-ordinate of the drop(same for every drop initially)
-    for(var x = 0; x < columns; x++)
-        drops[x] = 1; 
+    for(var x = 0; x < columns; x++)    drops[x] = 1; 
 }
 
-//addEventListener('resize', (event) => {});
-//onresize = (event) => {redo();console.log(ctx.width)};
-setInterval(draw, 35);
+
+var id = setInterval(draw, 35);
+window.onresize = redo;

@@ -39,13 +39,11 @@ var index = Math.floor(Math.random() * (remainingSongs.length - 1));
 
 var soundFile = remainingSongs[index];
 // Set name on movin text
-let str = "Now ur listenin' 2 ==> ";
+let str = "Now you are listening to ==> ";
 document.getElementById("song_name").innerHTML = str.concat(remainingSongs[index].slice(9));
 // Remove song from array
 remainingSongs.splice(index, 1);
-
 el.setAttribute("src", soundFile);
 }
-
 pickSong();
-el.addEventListener("ended", pickSong, false);
+var id = setInterval(pickSong, 120000);
